@@ -1,0 +1,18 @@
+/* src/components/OrderItemList/orderItemList.module.css */
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.item img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}

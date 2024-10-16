@@ -1,0 +1,132 @@
+/* Overall container */
+.profileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); /* Soft gradient background */
+    padding: 20px;
+  }
+  
+  /* Profile card design */
+  .profileCard {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow for card */
+    max-width: 500px;
+    width: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle, #ff7e5f, #feb47b); /* Gradient border effect */
+    background-origin: border-box;
+    background-clip: content-box, border-box; /* Gradient border effect */
+  }
+  
+  /* Hover animation for card */
+  .profileCard:hover {
+    transform: translateY(-5px); /* Slight lift */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); /* Deep shadow on hover */
+  }
+  
+  /* Header styling */
+  h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Form layout */
+  .profileForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  /* Form field styling */
+  .formField {
+    width: 100%;
+    max-width: 400px; /* Restricting width */
+  }
+  
+  /* Label styling */
+  label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  
+  /* Input field design */
+  .profileInput {
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    background: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease-in-out;
+    color: #333;
+  }
+  
+  .profileInput:focus {
+    box-shadow: 0 4px 10px rgba(255, 114, 85, 0.5); /* Glow effect on focus */
+    border: 1px solid #ff7e5f; /* Color change on focus */
+    outline: none;
+  }
+  
+  /* Submit button styling */
+  .submitButton {
+    padding: 12px 24px;
+    background-color: #ff7e5f; /* Bright gradient color */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submitButton:hover {
+    background-color: #feb47b; /* Lighter shade on hover */
+    transform: translateY(-3px);
+  }
+  
+  .submitButton:active {
+    transform: translateY(1px);
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .profileCard {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    .formField {
+      width: 100%;
+    }
+  
+    .profileInput {
+      padding: 10px 15px;
+    }
+  
+    .submitButton {
+      padding: 10px 20px;
+    }
+  }
+  

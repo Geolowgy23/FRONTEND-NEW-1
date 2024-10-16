@@ -1,0 +1,74 @@
+/* Container styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+/* Input field styling */
+.container input {
+  width: 100%;
+  max-width: 400px;
+  height: 3.5rem;
+  padding: 0.8rem 2rem 0.8rem 1rem;
+  border-radius: 2rem; /* Rounded corners for input */
+  border: 2px solid #ccc;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #ffffff, #f1f1f1); /* Soft gradient background */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.container input:focus {
+  border-color: #e72929;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+.container button {
+  
+  right: 0;
+  transform: translateX(50%);
+  height: 4rem; /* Slightly larger button */
+  width: 4rem;
+  background-color: #e72929; /* Bold button color */
+  border: none;
+  border-radius: 50%; /* Circle shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Floating shadow effect */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button hover effect */
+.container button:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Button active effect */
+.container button:active {
+  transform: scale(1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Search icon inside button */
+.searchIcon {
+  width: 24px; /* Icon size */
+  height: 24px; /* Icon size */
+  fill: white; /* White icon for contrast */
+}
+
+/* Button styling when input has text */
+.container button.active {
+  background-color: #00aaff; /* Change color when input has text */
+}
+

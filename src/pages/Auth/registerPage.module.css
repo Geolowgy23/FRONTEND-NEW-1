@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ff0000; /* Red background for the page */
+  padding: 2rem; /* Added padding around the container */
+}
+
+.details {
+  background-color: white; /* White background for the register content */
+  padding: 2rem; /* Padding inside the register content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow for some depth */
+  width: 100%;
+  max-width: 400px; /* Max width of the content */
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: 1px solid #ccc; /* Border for inputs */
+  border-radius: 4px; /* Slightly rounded corners */
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: #e63946; /* Red button color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+}
+
+button:hover {
+  background-color: #d62839; /* Darker red on hover */
+}
+
+.loginPrompt {
+  margin-top: 1rem;
+  text-align: center; /* Center the text */
+}
+
+.loginPrompt a {
+  color: #4a90e2; /* Change link color to blue or your preferred color */
+  text-decoration: none; /* Remove underline */
+}
+
+.loginPrompt a:hover {
+  text-decoration: underline; /* Underline on hover */
+}

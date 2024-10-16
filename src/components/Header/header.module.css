@@ -1,0 +1,98 @@
+.header {
+    background: white;
+    padding: 0;
+    border-bottom: 1px solid #e72929;
+}
+
+.header a {
+    color: #af1313;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.header a:hover {
+    animation: wave 1s infinite; /* Apply wave animation */
+    background: linear-gradient(180deg, #bb4848 0%, #ff7f7f 50%, #ffd2d2 100%);
+    color: white;
+    cursor: pointer;
+}
+
+/* Define waving animation */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0); /* Start and end position */
+    }
+    25% {
+        transform: translateY(-5px); /* Move up */
+    }
+    50% {
+        transform: translateY(5px); /* Move down */
+    }
+    75% {
+        transform: translateY(-3px); /* Move up slightly */
+    }
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.header ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.header ul a {
+    padding: 1rem;
+    display: inline-block;
+}
+
+.menu_container {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    z-index: 1;
+    background-color: whitesmoke;
+    display: none;
+}
+
+.menu_container:hover .menu {
+    display: block;
+}
+
+.menu a {
+    width: 100%;
+    min-width: 8rem;
+}
+
+/* Cart Icon and Count */
+.cartLink {
+    position: relative;
+    display: inline-block;
+}
+
+.cartIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.cartCount {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 0.1rem 0.45rem;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
